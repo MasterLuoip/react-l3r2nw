@@ -1,0 +1,53 @@
+h1,
+p {
+  font-size: 2px !important;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+}
+
+.view-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-container {
+  display: flex;
+}
+.element-container {
+  /* allow panel-container to have a horizontally centered position; */
+  height: 156px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.panel-container > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.digit-container {
+  padding: 32px;
+  font-size: 64px;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+.number-container {
+  min-width: 38px;
+}
+
+.reset-button {
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 12px;
+  transform: scale(0.66); /*8/12=0.66,font-size:10px*/
+  /* change font-size to 8, because chrome has minimum font-size 12 */
+}
